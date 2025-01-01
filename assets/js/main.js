@@ -19,6 +19,7 @@ function fetchFile(url) {
         aElement.remove();
         URL.revokeObjectURL(tUrl);
         donwloadBtn.innerHTML = "Download File";
+        fileInput.value = "";
     }).catch(() => {
         donwloadBtn.innerHTML = "Download File";
         alert("Download Failed - The website's CORS policy, such as those of YouTube, SoundCloud, and Spotify, prevented access");
